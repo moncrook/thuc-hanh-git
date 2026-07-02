@@ -1,0 +1,19 @@
+name: xin chào
+# 1 khi nào robot chạy?
+# ở đây mình càu đặt : mỗi khi có code đẩy lên (push) github là chạy
+on: [push]
+
+# 2. các công việc cần làm
+jobs:
+    say-hello-job:
+        #3 chạy ở đâu? (runner)
+        #  GitHub sẽ cấp cho ta một máy tính ảo dùng hệ điều hành Ubuntu Linux để chạy code.
+        runs-on: unbuntu-latest
+
+        # 4. CÁC BƯỚC THỰC HIỆN TRONG CÔNG VIỆC NÀY (Steps)
+        steps:
+            - name: bước 1 - kiểm tra mã nguồn (chechout code)
+              uses: actions/chechout@v4
+
+            - name: bước 2- in lời chào ra màn hình hello
+              run: echo "chào bạn đây là con robot actions đang nói chuyện với bạn"
