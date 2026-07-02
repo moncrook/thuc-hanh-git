@@ -13,7 +13,7 @@ jobs:
         # 4. CÁC BƯỚC THỰC HIỆN TRONG CÔNG VIỆC NÀY (Steps)
         steps:
             - name: bước 1 - kiểm tra mã nguồn (chechout code)
-              uses: actions/chechout@v4
+              uses: actions/checkout@v4
 
             - name: bước 2- in lời chào ra màn hình hello
               run: echo "chào bạn đây là con robot actions đang nói chuyện với bạn"
