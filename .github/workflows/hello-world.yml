@@ -8,7 +8,7 @@ jobs:
     say-hello-job:
         #3 chạy ở đâu? (runner)
         #  GitHub sẽ cấp cho ta một máy tính ảo dùng hệ điều hành Ubuntu Linux để chạy code.
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
 
         # 4. CÁC BƯỚC THỰC HIỆN TRONG CÔNG VIỆC NÀY (Steps)
         steps:
